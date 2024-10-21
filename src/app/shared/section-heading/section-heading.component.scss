@@ -1,0 +1,25 @@
+.head {
+  text-transform: uppercase;
+  font-size: 130px;
+  font-weight: 800;
+  margin: 55px 0 65px;
+}
+
+@media (max-width: 1400px) {
+  .head {
+    font-size: 100px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .head {
+    font-size: 70px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .head {
+    font-size: 40px !important;
+  }
+}
+

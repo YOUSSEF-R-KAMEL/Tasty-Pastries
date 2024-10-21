@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.container-home {
+  background: url("../../../assets/background_04.jpg");
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    opacity: 0.7;
+    z-index: 0;
+  }
+  & > * {
+    z-index: 2;
+    position: relative;
+  }
+  img {
+    z-index: 10;
+    position: relative;
+  }
+  .home {
+    background-color: #c98a40;
+    font-family: "Sen", sans-serif;
+    width: 65%;
+    color: #fff;
+    z-index: 1;
+    .desc-up {
+      margin-left: 35%;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    .body {
+      margin-left: 30%;
+      .head {
+        font-size: 74px;
+        font-weight: 800;
+        margin-top: 170px;
+      }
+      .desc {
+        width: 60%;
+        font-size: 16px;
+      }
+      img {
+        position: absolute;
+        top: -99px;
+        right: -400px;
+      }
+    }
+  }
+
+  .phone {
+    width: 65%;
+    z-index: 2;
+    .links {
+      margin-top: 25px;
+      margin-left: 34%;
+      font-size: 21px;
+      i {
+        display: block;
+        color: #c98a40;
+        margin-bottom: 15px;
+      }
+    }
+    .tel {
+      background-color: #c98a40;
+      width: 100%;
+      color: #fff;
+      display: flex;
+      align-items: end;
+      padding: 10px 15px;
+      margin-left: 35px;
+      font-size: 18px;
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 0;
+      span {
+        font-weight: 500;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1600px) {
+  img {
+    width: 400px;
+    right: -320px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .home {
+    width: 80% !important;
+    .head {
+      margin-top: 40px !important;
+    }
+    img {
+      position: static !important;
+      margin-top: 40px !important;
+      width: 200px;
+    }
+    h1 {
+      font-size: 45px !important;
+    }
+  }
+  .phone {
+    width: 80% !important;
+    .tel {
+      padding-bottom: 20px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    width: 100% !important;
+  }
+  .links {
+    margin-left: 30% !important;
+    margin-top: -3px !important;
+    li {
+      margin-top: 3px !important;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  }
+  .phone {
+    width: 100% !important;
+    .tel {
+      padding-bottom: 20px !important;
+      margin-left: 10px !important;
+      font-size: 14px !important;
+      margin-top: -5px;
+    }
+  }
+}
+
